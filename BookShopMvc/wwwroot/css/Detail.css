@@ -1,0 +1,92 @@
+﻿
+.detail-page {
+    box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
+    border-radius: 8px;
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    background-image: linear-gradient(to left,rgba(0, 0, 0, 0.057), rgb(253, 234, 206),rgba(0, 0, 0, 0.057));
+    color: rgb(14, 12, 10);
+    display: flex;
+}
+
+    .detail-page img {
+        width: 300px;
+        height: 450px;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-left:20px;
+    }
+
+.detail-page-body {
+    margin-left: 90px;
+    margin-top: 150px;
+}
+
+.book-name {
+    color: rgb(91, 21, 0);
+    margin-bottom: 30px;
+}
+
+.book-author {
+    color: rgb(91, 21, 0);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.book-price {
+    color: rgb(190, 126, 7);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.category-title {
+    color: rgb(91, 21, 0);
+}
+
+.comment-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-label {
+    color: rgb(190, 126, 7);
+    font-size: 23px;
+}
+
+.comment-body textarea {
+    width: 500px;
+}
+
+.comment-btn {
+    color: white;
+    border-radius: 8px;
+    background-color: rgba(190, 126, 7, 0.836)!important;
+}
+
+.comment-list {
+    margin-top: 20px;
+    width: 700px;
+    margin-left: 290px;
+}
+
+.list-group-item {
+    box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
+    display: flex!important;
+    border: none!important;
+    justify-content: space-between;
+    margin-bottom:10px;
+
+}
+
+    .list-group-item button {
+        border: none;
+        background-color: transparent;
+        color: rgb(255, 85, 0);
+        font-size: 20px;
+        
+    }
+
+ .list-group-item button:hover {
+  color: rgb(255, 13, 0);
+ }

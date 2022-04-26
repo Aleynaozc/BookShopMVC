@@ -1,0 +1,48 @@
+﻿@model BookNCategoryNSeller;
+<link rel="stylesheet" href="~/css/CreateCategorynSeller.css">
+<div class="container-fluid ">
+    <div class="col-6">
+        <form asp-action="CreateCategory">
+            <input asp-for="Category.Id" hidden />
+            <div class="mb-3">
+                <label class="form-label">Category Name</label>
+                <input type="text" class="form-control" asp-for="Category.Name" id="categoryName" onclick="saveCategory()">
+            </div>
+            <button type="submit" class="btn savebtn">Save</button>
+        </form>
+        <form asp-action="CreateSeller">
+            <input asp-for="Seller.Id" hidden />
+            <div class="mb-3">
+                <label class="form-label">Seller Name</label>
+                <input type="text" class="form-control" asp-for="Seller.Name">
+            </div>
+            <button type="submit" class="btn savebtn">Save</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        
+        const saveCategory = async () => {
+            var nameEl = document.querySelector("#categoryName");
+            try {
+                await fetch('SaveCategory', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        Name: nameEl.value
+                    }),
+                    headers: {
+                        'Accept': 'application/json',
+                        "Content-type": "application/json"
+                    },
+                });
+            } catch (ex) {
+                console.error(ex);
+            } finally {
+                nameEl.value = "";
+                getCategories();
+            }
+        }
+    </script>
+};

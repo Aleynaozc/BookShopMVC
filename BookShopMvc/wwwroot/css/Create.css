@@ -1,0 +1,35 @@
+﻿.dropdown button{
+    width:162px;
+}
+.dropdown-menu{
+    text-align:center!important;
+}
+.dropdown-item{
+    color:#2c648d!important;
+}
+.category-title-box ul{
+    list-style:none;
+
+}
+.category-title-box ul li{
+    float:left;
+
+}
+.category-title-box{
+    width:300px;
+    border:1px solid black;
+    height:30px;
+    background-color:white;
+}
+.newbookbtn {
+    float: right;
+    background-color: rgba(163, 78, 78, 0.89);
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 237px;
+}
+
+
+    .newbookbtn a {
+        color: rgba(255, 255, 255, 0.858);
+    }

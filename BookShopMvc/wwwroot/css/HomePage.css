@@ -1,0 +1,111 @@
+﻿.index-body{
+    position:relative;
+    left:200px;
+    top:20px;
+}
+
+
+.newbookbtn {
+    float: right;
+    background-color: rgb(163, 78, 78);
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+ .newbookbtn a {
+        color: rgba(255, 255, 255, 0.858);
+ }
+.new-seller-n-cat-btn {
+    float: right;
+    background-color: rgb(163, 78, 78);
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+
+    .new-seller-n-cat-btn a {
+        color: rgba(255, 255, 255, 0.858);
+    }
+
+
+.bookcard {
+    position: relative;
+    top: 60px;
+    border-radius: 8px;
+    background-image: linear-gradient(rgb(253, 232, 201),rgba(0, 0, 0, 0.057)) !important;
+    padding: 20px;
+    margin-left: 20px;
+    margin-bottom:20px;
+    text-align:center;
+    align-items:center;
+}
+.bookcard img{
+    width:200px;
+    height:300px;
+    
+}
+
+.card-title {
+    color: rgb(0, 22, 42);
+}
+
+.price-title {
+    font-size: 20px;
+}
+
+.book-info {
+    text-align: center;
+}
+
+.button-card {
+    position: relative;
+    display: flex;
+    right: 10px;
+    justify-content: space-between;
+}
+
+.btn-detail {
+    border-radius: 8px;
+    margin-right: 4px;
+    background-color: rgba(0, 86, 110, 0.516)!important;
+}
+
+.btn-delete {
+    border-radius: 8px;
+    margin-right: 4px;
+    background-color: rgba(190, 0, 0, 0.516)!important;
+}
+
+.btn-update {
+    border-radius: 8px;
+    background-color: rgba(210, 172, 3, 0.516)!important;
+}
+
+.card-title {
+    font-weight: 700;
+    color: rgb(91, 21, 0);
+}
+
+.card-text {
+    color: rgb(91, 21, 0);
+    font-size: 15px;
+}
+
+.price-title {
+    color: rgb(190, 126, 7);
+    font-weight: 700;
+}
+
+.category-title {
+    color: rgb(91, 21, 0);
+}
+.button-card {
+    position: absolute;
+    width: 50%;
+    bottom: 0px;
+    left:20px;
+}
+

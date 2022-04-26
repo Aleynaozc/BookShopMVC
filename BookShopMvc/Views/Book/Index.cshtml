@@ -1,0 +1,33 @@
+﻿@model BookShopMvc.ViewModals.BookNCategoryNSeller;
+<div class="new-seller-n-cat-btn">
+    <a asp-action="CreateCategoryNSeller" class="btn ">Add New Seller And Category</a>
+</div>
+
+<div class="newbookbtn">
+    <a asp-action="Create" class="btn ">Add New Book</a>
+</div>
+
+<div class="row ">
+
+    @foreach (var book in Model.Books)
+    {
+
+<div class="card bookcard" style="width: 18rem;">
+    <img src="@book.ImgUrl" class="card-img-top" alt="...">
+    <div class="card-body">
+        <div class="book-info">
+            <h5 class="card-title">@book.Name</h5>
+            <span class="card-text">@book.Author</span><br />
+            <span class="price-title">@book.Price TL</span>
+
+        </div>
+        <form class="button-card">
+            <a asp-action="Detail" class="btn btn-detail" asp-route-id="@book.ID">Detail</a>
+            <button asp-action="Delete" class="btn btn-delete" asp-route-id="@book.ID">Delete</button>
+            <a asp-action="Update" class="btn btn-update" asp-route-id="@book.ID">Update</a>
+        </form>
+    </div>
+
+</div>}
+</div>
+

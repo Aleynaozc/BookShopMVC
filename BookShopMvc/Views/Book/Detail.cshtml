@@ -1,0 +1,61 @@
+﻿
+@model SaveCommentViewModel;
+
+
+
+<div class="row">
+    
+    
+<div class="detail-page">
+
+    <img src="@ViewBag.Book.ImgUrl" class="card-img-top" alt="...">
+    <div class="detail-page-body">
+        <h5 class="book-name">Book Name: <strong>@ViewBag.Book.Name</strong></h5>
+        <p class="book-author">Author: <strong>@ViewBag.Book.Author</strong></p>
+        <p class="book-price">Price: <strong>@ViewBag.Book.Price</strong></p>
+        <p class="category-title">Category: 
+        @foreach (var category in ViewBag.Category) {
+            <strong>@category.Name</strong>
+            }</p>
+    <p class="category-title">
+        Seller:
+        @foreach (var sellers in ViewBag.Sellers)
+        {
+    <strong>@sellers.Name</strong>}
+    </p>
+        
+    </div>
+
+
+</div>
+<div class="comment-container">
+    <label class="form-label"><strong>Comments</strong></label>
+    <form class="comment-body" asp-action="SaveComment">
+        
+            <input asp-for="BookID" value="@ViewBag.Book.ID" hidden />
+            <textarea type="text" name="Comment"></textarea><br />
+            <button class="btn comment-btn"> Gönder</button><br />
+        
+
+    </form>
+
+
+    <ul class="comment-list">
+        @foreach (var comment in ViewBag.Book.Comments)
+        {
+    
+    <li class="list-group-item">@comment.Text 
+        <form>
+            <input name="ID" value="@comment.ID" hidden />
+            <button  asp-action="DeleteComment">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </form> 
+        </li>
+    
+        }
+
+
+    </ul>
+</div>
+</div>
